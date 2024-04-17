@@ -1,25 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
-
+import { HomePage } from './components/HomePage';
+import NavBar from './components/NavBar';
+import MoviesSlider from './components/MoviesSlider/MoviesSlider'
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    return (
+        <div className='bg-slate-300'>
+            <NavBar />
+            <HomePage />
+
+
+
+        </div>
+    );
 }
 
 export default App;
